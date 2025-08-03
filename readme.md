@@ -1,10 +1,9 @@
 # Circle CCTP Cross-Chain Transfer Demo
 
-This project explores  Circle’s CCTP v2 by bridging USDC from Ethereum Sepolia testnet to Base Sepolia testnet. It does not cover advanced features such as immediate transfers that bypass waiting for the attestation API or the use of hooks and custom logic during cross-chain message processing. For more complex use cases and functionality, users should refer to Circle’s official documentation and smart contract implementations.
+This project explores Circle’s CCTP v2 by bridging USDC from Ethereum Sepolia testnet to Base Sepolia testnet. It does not cover advanced features such as immediate transfers that bypass waiting for the attestation API (this can take 10min+) or the use of hooks. To understand this additional functionality please refer to Circle’s official documentation.
 
----
+## Key Steps (see main.py)
 
-Key Steps (see main.py)
 This project follows the end-to-end Circle CCTP v2 flow to bridge USDC from Ethereum Sepolia testnet to Base Sepolia testnet. Below are the key steps with example transaction references you can see a actual on-chain (testnet) flow.
 
 - **Step 1: Check ETH and USDC balances on Ethereum & Base Sepolia (testnet)**  
@@ -26,11 +25,7 @@ This project follows the end-to-end Circle CCTP v2 flow to bridge USDC from Ethe
 - **Step 6: Verify USDC balances on Base Sepolia after mint**  
   Confirm that your USDC balance on Base Sepolia has increased as expected. And USDC balance on Ethereum Sepolia has decreased as expected.
 
----
-
-## Faucets
-
-### Useful Faucets
+## Useful Faucets
 
 - [Circle Faucet](https://faucet.circle.com/)  
   *Sends testnet USDC to Ethereum Sepolia*
@@ -40,8 +35,6 @@ This project follows the end-to-end Circle CCTP v2 flow to bridge USDC from Ethe
 
 - [Alchemy Base Sepolia Faucet](https://www.alchemy.com/faucets/base-sepolia)  
   *Get Base Sepolia testnet ETH*
-
----
 
 ## Key Docs & References
 
